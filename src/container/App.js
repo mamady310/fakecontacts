@@ -23,7 +23,12 @@ class App extends Component {
   }
 
   render() {
-
+    const {contacts, searchfield} = this.state;
+    const filteredContacts = contacts.filter(people =>{
+      return contacts.name.tolowercase().includes
+      (searchfield.toLowerCase());
+    })
+   
   return (
     <div className="App">
     
