@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import CardInfo from '../components/CardInfo';
+import Search from '../components/Search';
 import './App.css';
 
 class App extends Component {
@@ -25,14 +26,14 @@ class App extends Component {
   render() {
     const {contacts, searchfield} = this.state;
     const filteredContacts = contacts.filter(people =>{
-      return contacts.name.tolowercase().includes
-      (searchfield.toLowerCase());
+      return people.name.toLowerCase().includes(searchfield.toLowerCase());
     })
    
   return (
     <div className="App">
-    
-       <CardInfo />
+    <h1>Contacts</h1>
+       <Search searchChange={this.onSearchChange}/>
+       <CardInfo contacts={filteredContacts}/>
       
     </div>
    );
