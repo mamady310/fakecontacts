@@ -30,8 +30,8 @@ class App extends Component {
     })
    
   return (
-    <div className="App">
-    <h1>Contacts</h1>
+    <div className="tc">
+    <h1 className="title">Contacts</h1>
        <Search searchChange={this.onSearchChange}/>
        <CardInfo contacts={filteredContacts}/>
       

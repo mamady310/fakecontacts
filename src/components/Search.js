@@ -4,7 +4,7 @@ const Search = ({ searchfield, searchChange}) => {
     return (
     <div className='pa2'>
         <input 
-        className='pa3 b--green'
+        className='pa3 b--green tc'
         type='search'
         placeholder='search contacts'
         onChange={searchChange}
