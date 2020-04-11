@@ -2,8 +2,9 @@ import React from 'react';
   
 const Search = ({ searchfield, searchChange}) => {
     return (
-    <div>
+    <div className='pa2'>
         <input 
+        className='pa3 b--green'
         type='search'
         placeholder='search contacts'
         onChange={searchChange}
