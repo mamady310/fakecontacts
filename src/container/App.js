@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import CardInfo from '../components/CardInfo';
 import './App.css';
 
 class App extends Component {
@@ -12,7 +13,7 @@ class App extends Component {
     fetch('https://jsonplaceholder.typicode.com/users')
     .then(response => response.json())
     .then(users => {this.setState({contacts: users})
-    console.log(this.state.contacts)
+    // console.log(this.state.contacts)
   })
    
   }
@@ -21,7 +22,9 @@ class App extends Component {
 
   return (
     <div className="App">
-   
+    
+       <CardInfo />
+      
     </div>
    );
   } 
